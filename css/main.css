@@ -1,7 +1,7 @@
 .roundedbutton {
   border-radius: 10px;
   background: #9b59b6;
-  color: white;
+  color: pink;
 }
 body {
   background: #2c3e50;
@@ -58,7 +58,7 @@ section article p {
 section article p button[type="submit"] {
   border-radius: 10px;
   background: #9b59b6;
-  color: white;
+  color: pink;
   padding: 10px;
 }
 footer .mysquare {
