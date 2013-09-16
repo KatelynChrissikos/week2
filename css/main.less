@@ -1,0 +1,117 @@
+
+@orange: #d35400;
+@purple: #9b59b6;
+@dark: #2c3e50;
+
+@basefont:40px;
+
+
+.square(@size){
+
+	width:@size;
+	height:@size;
+
+
+}
+
+
+.roundedbutton	{
+
+	border-radius:10px;
+	background: @purple;
+	color:white;
+
+}
+
+.fontstyle(@fontcolor)	{
+
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif; 
+	font-size: @basefont;
+	color: @fontcolor;
+	font-weight: 300;
+	line-height: 42px;
+}
+
+
+body	{
+	background:@dark;
+	font-size: @basefont;
+	.fontstyle(#8e44ad);
+}
+
+h1 {
+
+	font-size: @basefont * 8;
+}
+
+header	{
+	background:@purple;
+	width:800px;
+	nav	{
+		background:orange;
+	ul	{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	li	{
+
+		margin-right:15px;
+		display:inline;
+		&:last-child	{
+
+		margin-right:0px;
+
+		}
+		&:nth-child(4) {
+
+			background:@orange;
+
+		}
+	}
+	}
+	}
+	}
+
+a 	{
+
+	color:orange;
+
+	&:hover {
+
+	text-decoration:none;
+
+}
+}
+
+section	{
+	background: hotpink;
+	article	{
+		header	{
+			width:400px;
+			background:green;
+		h2	{
+			font-size: 30px;
+			}
+		}
+		p	{
+			color:yellow;
+			button[type="submit"] {
+				.roundedbutton;
+				padding:10px;
+			}
+			
+		}	
+	}
+	}
+
+footer	{
+	.mysquare	{
+		.square(200px);
+		background:red;
+		margin-bottom:20px;
+	}
+
+}
+
+
+
